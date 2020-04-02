@@ -13,7 +13,7 @@
 
     <!-- 项目模块 -->
     <modules>
-
+        <module>cloud-common</module>
     </modules>
 
     <!--项目基本属性-->
@@ -39,14 +39,14 @@
 
 
         <!-- JAR包版本管理 -->
-        <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
-        <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
-        <spring-cloud-alibaba.version>2.1.0.RELEASE</spring-cloud-alibaba.version>
+        <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
+        <spring-boot.version>2.2.5.RELEASE</spring-boot.version>
+        <spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>
         <guava.version>28.1-jre</guava.version>
         <fastjson.version>1.2.62</fastjson.version>
         <hutool-all.version>5.1.0</hutool-all.version>
         <jjwt.version>0.9.1</jjwt.version>
-        <HikariCP.version>3.4.1</HikariCP.version>
+        <HikariCP.version>3.4.2</HikariCP.version>
         <commons-lang3.version>3.9</commons-lang3.version>
         <pagehelper-spring-boot-starter.version>1.2.12</pagehelper-spring-boot-starter.version>
         <mybatis-plus-boot-starter.version>3.2.0</mybatis-plus-boot-starter.version>
@@ -59,12 +59,12 @@
         <easyexcel.version>2.1.6</easyexcel.version>
         <itextpdf.version>5.5.13</itextpdf.version>
         <itext-asian.version>5.2.0</itext-asian.version>
-        <spring-boot-starter-data-redis.version>2.2.2.RELEASE</spring-boot-starter-data-redis.version>
-        <spring-boot-starter-quartz.version>2.2.2.RELEASE</spring-boot-starter-quartz.version>
-        <spring-boot-devtools.version>2.2.2.RELEASE</spring-boot-devtools.version>
-        <spring-boot-starter-jdbc.version>2.2.2.RELEASE</spring-boot-starter-jdbc.version>
-        <spring-boot-maven-plugin.version>2.2.2.RELEASE</spring-boot-maven-plugin.version>
-        <spring-boot-starter-websocket.version>2.2.2.RELEASE</spring-boot-starter-websocket.version>
+        <spring-boot-starter-data-redis.version>2.2.5.RELEASE</spring-boot-starter-data-redis.version>
+        <spring-boot-starter-quartz.version>2.2.5.RELEASE</spring-boot-starter-quartz.version>
+        <spring-boot-devtools.version>2.2.5.RELEASE</spring-boot-devtools.version>
+        <spring-boot-starter-jdbc.version>2.2.5.RELEASE</spring-boot-starter-jdbc.version>
+        <spring-boot-maven-plugin.version>2.2.5.RELEASE</spring-boot-maven-plugin.version>
+        <spring-boot-starter-websocket.version>2.2.5.RELEASE</spring-boot-starter-websocket.version>
     </properties>
 
     <dependencyManagement>
