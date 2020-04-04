@@ -10,11 +10,11 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>cloud-eureka-client</artifactId>
-    <version>${moduleVersion.cloud-eureka-client}</version>
+    <artifactId>cloud-ribbon-provider</artifactId>
+    <version>${moduleVersion.cloud-ribbon-provider}</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <description>Eureka客户端</description>
+    <description>Ribbon服务提供者</description>
 
     <dependencies>
         <!-- 引入common模块 -->

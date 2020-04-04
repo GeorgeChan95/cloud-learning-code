@@ -18,6 +18,8 @@
         <module>cloud-eureka-client</module>
         <module>replica-eureka-server</module>
         <module>cloud-eureka-security-server</module>
+        <module>cloud-ribbon-provider</module>
+        <module>cloud-ribbon-customer</module>
     </modules>
 
     <!--项目基本属性-->
@@ -41,6 +43,8 @@
         <moduleVersion.cloud-eureka-client>1.0.0-SNAPSHOT</moduleVersion.cloud-eureka-client>
         <moduleVersion.replica-eureka-server>1.0.0-SNAPSHOT</moduleVersion.replica-eureka-server>
         <moduleVersion.cloud-eureka-security-server>1.0.0-SNAPSHOT</moduleVersion.cloud-eureka-security-server>
+        <moduleVersion.cloud-ribbon-provider>1.0.0-SNAPSHOT</moduleVersion.cloud-ribbon-provider>
+        <moduleVersion.cloud-ribbon-customer>1.0.0-SNAPSHOT</moduleVersion.cloud-ribbon-customer>
 
 
         <!-- JAR包版本管理 -->

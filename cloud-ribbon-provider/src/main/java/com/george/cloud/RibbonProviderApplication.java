@@ -8,20 +8,21 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * <p>
- *     Eureka客户端启动类
+ *     Ribbon 服务提供者启动类
  * </p>
  *
  * @author George Chan
  * @version 1.0
- * @date 2020/4/4 16:38
+ * @date 2020/4/4 23:09
  * @since JDK 1.8
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class EurekaClientApplication {
-    private static final Logger LOGGER = LoggerFactory.getLogger(EurekaClientApplication.class);
+public class RibbonProviderApplication {
+    private static final Logger LOGGER = LoggerFactory.getLogger(RibbonProviderApplication.class);
+
     public static void main(String[] args) {
-        SpringApplication.run(EurekaClientApplication.class, args);
-        LOGGER.info("Eureka Client 启动成功......");
+        SpringApplication.run(RibbonProviderApplication.class, args);
+        LOGGER.info("Ribbon Provider 启动成功......");
     }
 }

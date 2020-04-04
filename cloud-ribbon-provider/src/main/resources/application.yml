@@ -1,0 +1,32 @@
+###################################### 服务配置 ######################################
+server:
+  # 服务端口
+  port: 8002
+spring:
+  application:
+    # 实例名称，唯一标识
+    name: cloud-ribbon-provider
+  http:
+    # springboot解决中文乱码问题
+    encoding:
+      charset: UTF-8
+      enabled: true
+      # 是否强制对HTTP请求和响应上配置的字符集进行编码
+      force: true
+###################################### Eureka相关配置 ######################################
+eureka:
+  instance:
+    # 主机地址（获取本地ip地址）
+    hostname: ${spring.cloud.client.ip-address}
+    # 实例ID( Ip + 端口)
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    # 客户端在注册时使用自己的IP而不是主机名，缺省：false
+    prefer-ip-address: true
+  client:
+    # 是否要注册到注册中心
+    register-with-eureka: true
+    # 是否要从注册中心获取服务
+    fetch-registry: true
+    service-url:
+      # 注册中心地址（单节点）
+      defaultZone: http://localhost:8761/eureka/
