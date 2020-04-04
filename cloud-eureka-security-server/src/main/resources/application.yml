@@ -1,0 +1,40 @@
+###################################### 服务配置 ######################################
+server:
+  # 服务端口
+  port: 8763
+spring:
+  application:
+    # 实例名称，唯一标识
+    name: cloud-eureka-server-security
+  security:
+    # 配置SpringSecurity登录用户名和密码
+    user:
+      name: george
+      password: george
+  http:
+    # springboot解决中文乱码问题
+    encoding:
+      charset: UTF-8
+      enabled: true
+      # 是否强制对HTTP请求和响应上配置的字符集进行编码
+      force: true
+###################################### 注册中心相关配置 ######################################
+eureka:
+  instance:
+    # 主机地址（获取本地ip地址）
+    hostname: ${spring.cloud.client.ip-address}
+    # 实例ID( Ip + 端口)
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    # 客户端在注册时使用自己的IP而不是主机名，缺省：false
+    prefer-ip-address: true
+  server:
+    # 是否允许开启自我保护模式，缺省：true
+    # 当Eureka服务器在短时间内丢失过多客户端时，自我保护模式可使服务端不再删除失去连接的客户端
+    enable-self-preservation: false
+  client:
+    # 是否要注册到注册中心（注册中心不需要开启
+    register-with-eureka: false
+    # 是否要从注册中心获取服务（注册中心不需要开启）
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${spring.cloud.client.ip-address}:${server.port}/eureka/
