@@ -20,6 +20,7 @@
         <module>cloud-eureka-security-server</module>
         <module>cloud-ribbon-provider</module>
         <module>cloud-ribbon-customer</module>
+        <module>cloud-hystrix-service</module>
     </modules>
 
     <!--项目基本属性-->
@@ -45,6 +46,7 @@
         <moduleVersion.cloud-eureka-security-server>1.0.0-SNAPSHOT</moduleVersion.cloud-eureka-security-server>
         <moduleVersion.cloud-ribbon-provider>1.0.0-SNAPSHOT</moduleVersion.cloud-ribbon-provider>
         <moduleVersion.cloud-ribbon-customer>1.0.0-SNAPSHOT</moduleVersion.cloud-ribbon-customer>
+        <moduleVersion.cloud-hystrix-service>1.0.0-SNAPSHOT</moduleVersion.cloud-hystrix-service>
 
 
         <!-- JAR包版本管理 -->
